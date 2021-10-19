@@ -59,4 +59,5 @@
     <string name="success_login">Uspesno logovanje</string>
     <string name="error_login">Pogresna sifra ili username</string>
     <string name="error_sifra_unique">Zaposleni sa ovom sifrom postoji u bazi</string>
+    <string name="filtriraj_kupca">Filtriraj po zaposlenom:</string>
 </resources>
