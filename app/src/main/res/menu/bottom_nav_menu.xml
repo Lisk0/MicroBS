@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_zaposleni"
+        android:icon="@drawable/ic_zaposleni_24dp"
+        android:title="@string/title_zaposleni" />
+
+    <item
+        android:id="@+id/navigation_kupac"
+        android:icon="@drawable/ic_kupac_24dp"
+        android:title="@string/title_kupac" />
+
+    <item
+        android:id="@+id/navigation_weather"
+        android:icon="@drawable/ic_weather_24dp"
+        android:title="@string/title_weather" />
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_zaposleni">
+
+    <fragment
+        android:id="@+id/navigation_zaposleni"
+        android:name="com.lisko.microbs.view.fragments.ZaposleniFragment"
+        android:label="@string/title_zaposleni"
+        tools:layout="@layout/fragment_zaposleni" >
+        <action
+            android:id="@+id/action_navigation_zaposleni_to_addZaposleniActivity"
+            app:destination="@id/addZaposleniFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kupac"
+        android:name="com.lisko.microbs.view.fragments.KupacFragment"
+        android:label="@string/title_kupac"
+        tools:layout="@layout/fragment_kupac" >
+        <action
+            android:id="@+id/action_navigation_kupac_to_addKupacFragment"
+            app:destination="@id/addKupacFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_weather"
+        android:name="com.lisko.microbs.view.fragments.WeatherFragment"
+        android:label="@string/title_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/addKorisnikActivity"
+        android:name="com.lisko.microbs.view.activities.AddKorisnikActivity"
+        android:label="activity_add_korisnik"
+        tools:layout="@layout/activity_add_korisnik" />
+    <fragment
+        android:id="@+id/addZaposleniFragment"
+        android:name="com.lisko.microbs.view.fragments.AddZaposleniFragment"
+        android:label="@string/add_zaposleni"
+        tools:layout="@layout/fragment_add_zaposleni"/>
+    <fragment
+        android:id="@+id/addKupacFragment"
+        android:name="com.lisko.microbs.view.fragments.AddKupacFragment"
+        android:label="@string/add_kupac"
+        tools:layout="@layout/fragment_add_kupac">
+        <argument android:name="target"
+            app:argType="com.lisko.microbs.model.entities.Kupac"
+            app:nullable="true"
+            android:defaultValue="@null">
+        </argument>
+    </fragment>
+</navigation>
