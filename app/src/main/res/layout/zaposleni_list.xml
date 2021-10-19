@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="32dp"
         android:orientation="horizontal">
 
         <TextView
@@ -15,21 +15,24 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_zaposleni_ime_prezime"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.6"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_zaposleni_grad"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
