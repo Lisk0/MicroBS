@@ -83,11 +83,11 @@ class WeatherFragment : Fragment() {
             error -> error?.let {
                 Log.e("weather loading error", error.toString())
             if(error){
-                binding.layoutNotLoaded.visibility= View.VISIBLE
+                //binding.layoutNotLoaded.visibility= View.VISIBLE
                 binding.layoutLoaded.visibility= View.GONE
             }
             else{
-                binding.layoutNotLoaded.visibility= View.GONE
+                //binding.layoutNotLoaded.visibility= View.GONE
                 binding.layoutLoaded.visibility= View.VISIBLE
             }
         }
