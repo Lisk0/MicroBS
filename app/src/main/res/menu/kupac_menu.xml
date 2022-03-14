@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/edit_kupac"
-        android:title="Edit" />
+        android:title="@string/edit_kupac" />
     <item
         android:id="@+id/delete_kupac"
-        android:title="Delete" />
+        android:title="@string/delete_kupac" />
 </menu>
